@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RSAHelper } from './rsa-helper';
 import { User } from './user.interface';
 import { RsaService } from './rsa.service';
 
@@ -56,7 +55,8 @@ import { RsaService } from './rsa.service';
         </tr>
       </table>
     </ng-container>
- `
+ `,
+  standalone: false
 })
 export class AppComponent implements OnInit {
 
